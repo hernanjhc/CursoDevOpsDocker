@@ -1,0 +1,16 @@
+ Desplegar un microservicio en azure. Libreria.
+ 
+ 1 - Crear repositorio git del microservicio.
+	Almacena código fuente del microservicio.
+	La idea es sincronizar el código que vamos desarrollando con el código
+	que queremos enviar a los servidores de Azure.
+	A futuro si deseamos utilizar otro servicio cloud AWS, google...
+	Solo deberiamos dar a este nuevo servicio el acceso a nuestro repositorio del microservicio
+ 2 - Crear imagen docker del microservicio
+	Docker Container necesita una base que defina sus caracteristicas. Se denomina IMAGEN del microservicio.
+ 3 - Cluster Kubernetes
+	Luego de disponer de la imagen del microservicio libreria. Se puede incluir dentro de kubernetes.
+	Se debe crear un cluster kubernetes que administre docker container microservicio.
+ 4 - Despliegue - Deploy en Azure
+	Luego de configurar el cluster kubernetes, incluyendo container de microservicio, damos de alta en azure.
+	Y crear un ambiente server donde se alojara el cluster

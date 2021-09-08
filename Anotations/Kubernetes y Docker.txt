@@ -1,0 +1,14 @@
+Cada proyecto debe tener sus propios recursos.
+
+Se debe resolver
+
+1 - Comunicacion entre microservicios.
+	Kubernetes. workst... de container. (Administrador de container) que permite hacer
+	el despliegue de los container hacia diferentes servidores como azure.
+	Maneja la comunicacion interna entre los microservicios.
+	Administra creación y eliminación de container.
+2 - Isolation de Microservicios (independencia de recursos cuando un microservicio se ejecuta)
+	Se utiliza Docker container
+		Dockerizar.. crea ambiente independiente, similar a virtual machine. Cuya unica mision 
+		es ejecutar un Microservicio.
+		Se dockeriza cada una de las app de microservicio, las base de datos y el gateway.
