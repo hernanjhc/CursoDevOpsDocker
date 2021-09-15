@@ -16,12 +16,21 @@
 	Y crear un ambiente server donde se alojara el cluster
 	
 2 - Se debe instalar docker	
-kubernetes es K8s. Contruido por oogle, ejecuta container en prd. administra container.
+kubernetes es K8s. Contruido por google, ejecuta container en prd. administra container.
 a - Container
 	Sincroniza amb desarrollo local con servidor prd.
 	Sobre docker se crean container con sus propias librerias.
-	container a:	database mongodb + dependendencias + librerias
+	container a:	database mongodb + dependendencias + librerias + framework
 	container b:	node.js + dependendencias + librerias
+	
+	sin docker:
+	microservicio
+	librerias + dependendencias
+	OS
+	Hardware.
+	
+	con docker:	
+	1 o mas container(microservicio + librerias + dependendencias + DB...)
 	docker
 	OS
 	Hardware.
@@ -45,10 +54,30 @@ a - Container
 	https://hub.docker.com/
 	descargar la imagen que mas se adecue a tu proyecto
 	
+	Validar requerimientos
+	hyperv
+		sino powershell en admin enable-windowsoptionalfeature -online...
+	
+	
 	https://docs.docker.com/
-	descargar instalador para windows.
+	descargar instalador para windows. Docker Desktop Installer.setup
 	downloads and install
-	Docker Desktop Installer
+	Docker Desktop Installer. E Instalar.
+	
+	Alta en dockerHub
+	https://hub.docker.com/
+	https://hub.docker.com/signup?redirectTo=/subscription?plan=free
+	dockerId	==> hernanjhc
+	email		==> hernan_jhc@hotmail.com
+	Key10_
+	
+	Comandos docker, 
+	abrir powershell administrador.
+	docker -v
+	docker version 20...
+	
+	
+	
 b - Orquestacion
 
 
