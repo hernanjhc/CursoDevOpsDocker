@@ -70,14 +70,45 @@ a - Container
 	dockerId	==> hernanjhc
 	email		==> hernan_jhc@hotmail.com
 	Key10_
-	
+
+En caso que docker no funcione, se hizo lo siguiente.	
+	Excepción no controlada en la aplicación. Si hace clic en Continuar, la aplicación omitirá este error e intentará continuar. Si hace clic en Salir, la aplicación se cerrará inmediatamente.
+
+Se produjo una excepción de tipo 'Docker.ApiServices.WSL2.WslKernelUpdateNotInstalledException'.
+Enable-WindowsOptionalFeature -Online -FeatureName $("VirtualMachinePlatform", "Microsoft-Windows-Subsystem-Linux")
+
+https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package
+instalar	wsl_update_x64
+restart PC
+
 	Comandos docker, 
 	abrir powershell administrador.
 	docker -v
 	docker version 20...
 	
+	docker image list
+	por ahora no hay nada...
 	
+	iniciar sesion en hubdocker (se inicia con windows)
+	ahora estan enlazados hubdocker con powershell de la pc.
 	
+	Prueba.
+	descargar una imagen de prueba https://hub.docker.com/_/nginx
+	verificar imagen descargada. docker image list
+	si quisiera revertir o eliminar imagen. docker rmi nginx:1.18.0
+	Para crear la instancia del container. docker run -it nginx:1.18.0 /bin/bash
+	
+	Ahí ya estoy en linux. Se escribe un comando linux. ls -al
+	Para detener el container. exit.
+	
+	Desde otro powershell. docker container list. describe los container que se estan ejecutando.
+	
+	Ver historico de container. docker container list -a
+	limpiar container de memoria. docker rm (3 primeros digitos del container id). docker rm ba6
+	
+	Mas informacion de comandos. HubDocker.com/documentacion/gethelp
+	
+	Como creamos container que almanecenen microservicios con net core
 b - Orquestacion
 
 
