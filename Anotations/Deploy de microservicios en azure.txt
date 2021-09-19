@@ -109,6 +109,24 @@ restart PC
 	Mas informacion de comandos. HubDocker.com/documentacion/gethelp
 	
 	Como creamos container que almanecenen microservicios con net core
+	o deployment de un microservicio en un container
+	paso 1 - crear instancia de una imagen (docker container)
+	con ello se crea docker file: codigo compilado + imagen base con las librerias de net core.
+	docker file tiene los comandos que generaran la imagen de la app microservicio.
+	posterior la app image. Se puede crear el container del microservicio.
+	ver codigo compilado hasta container.jpg
+	
+	vs2019. click boton derecho sobre aspi.libreria. agregar. soporte docker. linux.
+	se creó un archivo docker file en el proyecto.
+	==>webapp 
+	==> docker file (sdk net core, path files en proyecto y dónde irán a futuro, publish app in container)
+		se comenta archivo docker file en servicios.api.libreria.
+	
+	Se publicara el microservicio en hub.docker.com
+	Libreria. Publicar. Docker container register. Docker Hub.
+	Ingresar credenciales docker.hub
+	Corroborar repositorio en docker.hub.
+	
 b - Orquestacion
 
 
